@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ALL */
+.container {
+    display: grid;
+    grid-template-columns: 4fr 6fr 5fr;
+}
+
+/* Navigation-bar */
+.nav-bar{
+    margin: 40px 0 0 40px;
+    width: 10px;
+}
+.nav-bar .logo-init{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #6280F6;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 40px;
+}
+.nav-bar h1{
+    margin: 30px 0 60px 0;
+    color: #6280F6;
+    font-size: 27px;
+}
+.nav-bar .join-button {
+    background-color: #6280F6;
+    color: #fff;
+    width: 200px;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.nav-bar .join-button:hover {
+    background-color: #7892fc;
+    cursor: pointer;
+}
+.nav-bar .navigation .nav {
+    width: 190px;
+    display: flex;
+    align-items: center;
+    color: #a5a6a7;
+    gap: 50px;
+    margin: 40px 0 10px 20px;
+    transition: 0.25s;
+}
+.nav-bar .navigation .nav:hover {
+    font-weight: 600;
+    color: #000;
+    border-right: 4px #6280F6 solid;
+    cursor: pointer;
+}
+.nav-bar .navigation .nav img {
+    width: 22px;
+}
+.nav-bar .navigation .two {
+    color: #000;
+    font-weight: 600;
+    border-right: 4px #6280F6 solid;
+}
+.nav-bar .upgrade img {
+    width: 220px;
+    margin: 50px 0 10px 0;
+}
+.nav-bar .upgrade p {
+    margin-left: 50px;
+}
+.nav-bar .upgrade .upgrade-desc {
+    color: #a5a6a7;
+    width: 150px;
+    text-align: center;
+}
+.nav-bar .upgrade .upgrade-button{
+    background-color: #6280F6;
+    color: #fff;
+    width: 150px;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0 20px 40px;
+}
+.nav-bar .upgrade .upgrade-button:hover {
+    background-color: #7892fc;
+    cursor: pointer;
+}
+
+/* Main-Page */
+.main {
+    background-image: linear-gradient(rgba(134, 147, 171, 0.1), rgba(189, 212, 231, 0.1));
+    padding: 50px;
+    margin: auto;
+    width: 950px;
+}
+.main .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+    margin-bottom: 40px;
+}
+.main .search input[type=text] {
+    width: 400px;
+    border: 1px #ffffff solid;
+    padding: 18px 30px;
+    border-radius: 10px;
+    color: #a5a6a7;
+}
+.main .search input[type=text]::placeholder {
+    color: #a5a6a7;   
+}
+.main .search img {
+    width: 35px;
+    height: 35px;
+    transition: 0.25s;
+}
+.main .search img:hover {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.main .main-nav-bar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 40px 0;
+}
+.main .main-nav-bar .nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    color: #a5a6a7;
+    font-weight: 600;
+}
+.main .main-nav-bar .nav p {
+    padding-bottom: 10px;
+    transition: 0.25s;
+}
+.main .main-nav-bar .nav p:hover {
+    color: #6280F6;
+    font-weight: 600;
+    border-bottom: 4px #6280F6 solid;
+    cursor: pointer;
+}
+.main .main-nav-bar .nav .ongoing {
+    color: #6280F6;
+    font-weight: 600;
+    border-bottom: 4px #6280F6 solid;
+}
+
+.main .main-courses .course-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.main .main-courses .one {
+    width: 870px;
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(img/main-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.main .main-courses .two {
+    width: 435px;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(img/main-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+.main .main-courses .three {
+    width: 435px;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),url(img/main-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px;
+}
+.main .main-courses .course .info {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    margin: 30px;
+    margin-left: 55px;
+}
+.main .main-courses .course .info .name {
+    font-size: 30px;
+    margin: 15px 0;
+}
+.main .main-courses .course .time {
+    position: absolute;
+    right: 0;
+    margin: 30px;
+    color: #fff;
+}
+
+.main .main-courses .course .user {
+    width: 65px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    border: 5px #6280F6 solid;
+    border-radius: 100px;
+}
+.main .main-courses .course .play {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(145, 145, 145,0.5);
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    margin: 30px;
+    cursor: pointer;
+}
+
+/* User-Info-Page */
+.user-info {
+    width: 250px;
+    padding: 20px 7px;
+}
+.user-info .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-info .user img{
+    width: 65px;
+    border-radius: 10px;
+}
+.user-info .user .drop {
+    color: #8f8f8f;
+    margin-left: 10px;
+}
+.user-info .user p {
+    margin-left: 10px;
+}
+
+.user-info .progress {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 60px 0 25px 0;
+}
+
+.user-info .skill{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.user-info .one img {
+    width: 45px;
+    height: 45px;
+    border-radius: 7px;
+    padding: 10px;
+}
+.user-info .two img {
+    width: 45px;
+    height: 45px;
+    background-color: #D4F5F7;
+    border-radius: 7px;
+    padding: 10px;
+}
+.user-info .three img {
+    width: 45px;
+    height: 45px;
+    background-color: #FFEED5;
+    border-radius: 7px;
+    padding: 10px;
+}
+.user-info .skill p {
+    font-weight: 600;
+}
+.user-info .skill .level {
+    font-size: 14px;
+    color: #a5a6a7;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.user-info .app {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.user-info .app img {
+    width: 300px;
+}
+.user-info .app h1 {
+    margin-top: 20px;
+}
+
+.user-info .app p  {
+    background-color: #6280F6;
+    color: #fff;
+    width: 150px;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+.user-info .app p:hover {
+    background-color: #7892fc;
+    cursor: pointer;
+}
